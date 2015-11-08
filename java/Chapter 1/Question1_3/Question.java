@@ -1,16 +1,13 @@
-package Question1_3;
-
+//package Question1_3;
 public class Question {	
 	public static String sort(String s) {
 		char[] content = s.toCharArray();
 		java.util.Arrays.sort(content);
 		return new String(content);
-	}
-	
+	}	
 	public static boolean permutation(String s, String t) {
-		return sort(s).equals(sort(t));
+		return sort(s).equals(sort(t)); 
 	}
-	
 	public static boolean anagram(String s, String t) {
 		if (s.length() != t.length())
 			return false;
@@ -32,7 +29,6 @@ public class Question {
 			if (letters[c] == 0) {
 				++num_completed_t;
 				if (num_completed_t == num_unique_chars) {
-					// it’s a match if t has been processed completely
 					return true;
 					//return i == t.length() - 1;
 				}
@@ -52,3 +48,5 @@ public class Question {
 		}
 	}
 }
+
+
