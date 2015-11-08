@@ -1,4 +1,4 @@
-package Question2_1;
+//package Question2_1;
 
 import java.util.HashSet;
 import java.util.Hashtable;
@@ -20,7 +20,6 @@ public class Question {
 			n = n.next;
 		}
 	}
-	
 	public static void deleteDupsC(LinkedListNode head) {
 		if (head == null) return;
 		LinkedListNode previous = head;
