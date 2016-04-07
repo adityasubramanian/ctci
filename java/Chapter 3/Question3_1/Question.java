@@ -3,8 +3,8 @@ package Question3_1;
 import java.util.EmptyStackException;
 
 public class Question {
-	static int stackSize = 10;
-	static int [] buffer = new int [stackSize * 3];
+	static int stackSize = 10;				//stack size 
+	static int [] buffer = new int [stackSize * 3];	// 3 stacks 
 	
 	// 3 stack pointers to keep track of the index of the top element
 	static int [] stackPointer = {-1, -1, -1};

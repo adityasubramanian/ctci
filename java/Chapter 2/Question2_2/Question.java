@@ -3,16 +3,14 @@ package Question2_2;
 import CtCILibrary.*;
 
 public class Question {
-
 	public static int nthToLastR1(LinkedListNode head, int n) {
 		if (n == 0 || head == null) {
-			return 0;
+			return 0; 
 		}
-		int k = nthToLastR1(head.next, n) + 1;
+		int k = nthToLastR1(head.next, n) +1; 
 		if (k == n) {
-			System.out.println(n + "th to last node is " + head.data);
+			System.out.println(n+"th to last node is" + head.data); 
 		}
-		return k;
 	}
 	
 	public static LinkedListNode nthToLastR2(LinkedListNode head, int n, IntWrapper i) {
@@ -74,7 +72,6 @@ public class Question {
 	  	}
 	  	return p1;
 	}
-	
 	public static void main(String[] args) {
 		LinkedListNode head = AssortedMethods.randomLinkedList(10, 0, 10);
 		System.out.println(head.printForward());
@@ -88,5 +85,4 @@ public class Question {
 			System.out.println("Null.  n is out of bounds.");
 		}
 	}
-
 }

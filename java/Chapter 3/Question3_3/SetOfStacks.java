@@ -27,7 +27,6 @@ public class SetOfStacks {
 			stacks.add(stack);
 		}
 	}
-	
 	public int pop() {
 		Stack last = getLastStack();
 		int v = last.pop();
@@ -36,11 +35,9 @@ public class SetOfStacks {
 		}
 		return v;
 	}
-	
 	public int popAt(int index) {
 		return leftShift(index, true);
 	}
-	
 	public int leftShift(int index, boolean removeTop) {
 		Stack stack = stacks.get(index);
 		int removed_item;
